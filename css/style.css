@@ -17,7 +17,15 @@ li {
   text-decoration-color: white;
 }
 
-
+.littleBox {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(34, 158, 248);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
 header {
   width: 100%;
   background-color: rgb(9, 27, 40);
@@ -74,6 +82,7 @@ video {
   width: fit-content;
   position: relative;
   bottom: 650px;
+  width: 100%;
 }
 
 /* h2 {
@@ -101,6 +110,11 @@ body {
  
 }
 
+.projectBigBox {
+  position: relative;
+  bottom: 500px;
+
+}
 .projectBox {
   display: grid;
   justify-content: center;
@@ -121,6 +135,7 @@ body {
   margin: 30px;
   position: relative;
   z-index: -2;
+  bottom: 800px;
 }
 
 .projectBox1 {
@@ -143,9 +158,14 @@ body {
   object-fit: contain;
 }
 
+.projectBigBox,  .projectBigBox .title
+
+
 
 .projectBigBox {
-
+  background: url('../images/dyno.png') ;
+  background-size: cover;
+  object-fit: contain;
   display: grid;
   justify-content: center;
   width: 1300px;
@@ -153,15 +173,10 @@ body {
   border: 2px solid white;
   margin: 30px;
   position: relative;
-  bottom: 260px;
+  bottom: 1060px;
   left: 300px;
 }
 
-.projectBigBox {
-  background: url('../images/dyno.png') ;
-  background-size: cover;
-  object-fit: contain;
-}
 
 .projectBigBox .title {
   position: relative;
@@ -248,7 +263,7 @@ body {
 .backBox {
   position: absolute;
   z-index: -2;
-  bottom: 135px;
+  bottom: 935px;
   left: 300px;
   height: 1100px;
   width: 1600px;
