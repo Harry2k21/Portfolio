@@ -17,6 +17,7 @@ li {
   text-decoration-color: white;
 }
 
+
 header {
   width: 100%;
   background-color: rgb(9, 27, 40);
@@ -26,7 +27,14 @@ header {
   top: 0px;
   z-index: 1;
 }
-
+#line:hover {
+  background-color:rgb(174, 119, 187);;
+}
+li:hover {
+  color:rgb(174, 119, 187);
+  
+  /* font-size: 18px; */
+}
 header ul, li {
 
   text-decoration: none;
@@ -45,7 +53,7 @@ header h1 {
   margin-top: 14px;
   border-radius: 1px;
   border: 2px solid white;
-  background-image: linear-gradient(180deg, rgb(244, 55, 58,0.6),rgb(67, 18, 67,0.6));
+  background-image: linear-gradient(65deg, rgb(244, 55, 58,0.6),rgb(67, 18, 67,0.6));
   
 }
 
@@ -56,7 +64,7 @@ header h1 {
   position: relative;
   top: 26px;
   right: 65px;
-
+  bottom: 100px;
 }
 
 
@@ -80,6 +88,7 @@ video {
 div .hero {
 
 }
+
 body {
   color: white;
   background: fixed;
@@ -89,8 +98,8 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+ 
 }
-
 
 .projectBox {
   display: grid;
@@ -99,9 +108,44 @@ body {
   height: 200px;
   border: 2px solid white;
   margin: 30px;
+  position: relative;
+  z-index: -2;
 }
 
+.projectBox1, .projectBox2, .projectBox3, .projectBox4 {
+  display: grid;
+  justify-content: center;
+  width: 600px;
+  height: 200px;
+  border: 2px solid white;
+  margin: 30px;
+  position: relative;
+  z-index: -2;
+}
+
+.projectBox1 {
+  background: url('../images/reacttable.png') no-repeat;
+  object-fit: contain;
+}
+
+.projectBox2 {
+  background: url('../images/horiseon.png') no-repeat;
+  object-fit: contain;
+}
+
+.projectBox3 {
+  background: url('../images/starbucks.png') no-repeat;
+  object-fit: contain;
+}
+
+.projectBox4 {
+  background: url('../images/taskmanger.png') no-repeat;
+  object-fit: contain;
+}
+
+
 .projectBigBox {
+
   display: grid;
   justify-content: center;
   width: 1300px;
@@ -113,13 +157,19 @@ body {
   left: 300px;
 }
 
+.projectBigBox {
+  background: url('../images/dyno.png') ;
+  background-size: cover;
+  object-fit: contain;
+}
+
 .projectBigBox .title {
   position: relative;
   top: 310px;
   right: 572px;
 }
 
-div .title {
+.title {
   background-color: rgb(9, 27, 40);
   text-align: center;
   justify-content: center;
@@ -133,7 +183,7 @@ div .title {
   
 }
 
-div .title a{
+.title a{
   color: white;
   display: inline-block;
   font-size: 11px;
@@ -147,6 +197,25 @@ div .title a{
   margin:10px;
   position: relative;
   left: 240px;
+  
+}
+.line2 {
+  background-color: white;
+  width: 5px;
+  height: 1030px;
+  margin:10px;
+  position: relative;
+  left: 240px;
+}
+
+.line3 {
+  background-color: white;
+  width: 5px;
+  height: 230px;
+  margin:10px;
+  position: relative;
+  left: 240px;
+  bottom: 840px;
 }
 
 #about {
@@ -166,7 +235,25 @@ div .title a{
   bottom: 145px;
 }
 
+.page-section2 {
+  position: relative;
+  left: 300px;
+  bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: auto;
+  grid-template-rows: auto;
+}
 
+.backBox {
+  position: absolute;
+  z-index: -2;
+  bottom: 135px;
+  left: 300px;
+  height: 1100px;
+  width: 1600px;
+  background-image: linear-gradient(45deg, rgb(244, 55, 58),rgb(67, 18, 67));
+}
 #projects {
   position: relative;
   bottom: 740px;
@@ -186,6 +273,22 @@ div .title a{
   src: url(../images/dyno.png);
   position: relative;
   z-index: 1;
+}
+
+#RT img {
+  width:100%;
+  height:100%;
+  object-fit: fill;
+  position: relative;
+  z-index: 2;
+}
+
+.img {
+  width:100%;
+  height:100%;
+  object-fit: contain;
+  position: relative;
+  z-index: -10;
 }
 
 #contact h2 {
